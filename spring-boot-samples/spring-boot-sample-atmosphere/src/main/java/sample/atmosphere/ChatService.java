@@ -29,6 +29,7 @@ import org.atmosphere.cpr.AtmosphereResourceEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//Added comment for jenkins
 @ManagedService(path = "/chat")
 public class ChatService {
 
