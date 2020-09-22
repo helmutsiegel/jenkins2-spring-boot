@@ -66,7 +66,8 @@ public class SampleAtmosphereApplicationTests {
 		AtomicReference<String> messagePayloadReference = context
 				.getBean(ClientConfiguration.class).messagePayload;
 		context.close();
-		assertThat(count).isEqualTo(0L);
+		//changed from 0L to 1L
+		assertThat(count).isEqualTo(1L);
 		assertThat(messagePayloadReference.get())
 				.contains("{\"message\":\"test\",\"author\":\"test\",\"time\":");
 	}
